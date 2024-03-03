@@ -5,7 +5,6 @@ let flag = '';
 displayIn = (calculation, flag) => {
   if(flag === 'error'){
     document.querySelector('.js-display-output').innerHTML = 'error';
-    console.log('error')
     return;
   }
   document.querySelector('.js-display-input').innerHTML = calculation;
@@ -24,7 +23,6 @@ calculate = (val) => {
         calculation = '';
         return;
       }
-      console.log(calculation);
       displayOut(calculation);
       return;
     }
@@ -42,7 +40,6 @@ calculate = (val) => {
     }
     // calculation = calculation.toString();
     calculation = calculation.toString().slice(0,-1);
-    console.log(calculation);
     displayIn(calculation);
     return;
   }
@@ -59,7 +56,5 @@ calculate = (val) => {
     return;
   }
   calculation += val;
-  // console.log(eval(calculation));
-  console.log(calculation);
   displayIn(calculation);
 }
