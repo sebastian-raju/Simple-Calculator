@@ -1,0 +1,92 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container{
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+  background-color: rgb(202, 228, 226);
+  font-family: "Poppins", sans-serif;
+}
+.calculator-container{
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+  max-width: 360px;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(37, 37, 37);
+}
+
+.calculator-title{
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+
+.button-container{
+  display: flex; 
+  justify-content: center;
+}
+
+.buttons, .equals, .operator{
+  width: 90px;
+  height: 90px;
+  font-size: 18px;
+  border: none;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  transition: 0.2s all;
+  border-radius: 4px;
+}
+
+.equals{
+  background-color: rgb(14, 149, 149);
+}
+.equals:hover{
+  color: rgb(7, 73, 73);
+}
+
+.operator{
+  color: rgb(14, 149, 149);
+}
+
+.operator:hover{
+  background-color: rgb(14, 149, 149);
+  color: rgb(7, 73, 73);
+}
+
+.buttons:hover{
+  background-color: rgb(14, 149, 149);
+  color: white;
+}
+
+.display-input{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 17px;
+  min-height: 28px;
+  padding: 0px 20px;
+  letter-spacing: 4px;
+  word-break: break-all;
+  margin-bottom: 5px;
+}
+
+.display-output{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 39px;
+  min-height: 70px;
+  padding: 0px 20px;
+  letter-spacing: 3px;
+  word-break: break-all;
+  color: rgb(14, 149, 149);
+  font-weight: 500;
+  line-height: 39px;
+}
